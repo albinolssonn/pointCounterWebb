@@ -23,29 +23,70 @@ p {
   margin-bottom: 15px;
 }
 
-.header {
+/*----------------------------------------------------------------------------- Global Colors */
+.header__section,
+.text__section,
+.recension {
   background-color: #5ffdb4;
+}
+
+.body {
+  color: #1d1d1d;
+}
+
+/*----------------------------------------------------------------------------- Sections */
+
+.header__section {
   color: #ffffff;
   padding: 30px 50px 30px 50px;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
-.headerText,
-.headerImg {
-  width: 80%;
-  margin: auto;
-}
-
-.symbolDiv {
-  color: #1d1d1d;
+.symbol__section {
   height: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 30px 50px 30px 50px;
   align-content: center;
 }
+
+.product__section {
+  background-color: #f8f8f8;
+  padding: 70px 50px 70px 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.text__section {
+  color: #ffffff;
+  padding: 100px 50px 100px 50px;
+}
+
+.recension__section {
+  padding: 100px 50px 100px 50px;
+}
+
+/*----------------------------------------------------------------------------- Header Content */
+
+.header__grid {
+  height: 100%;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__text,
+.header__img {
+  width: 80%;
+  margin: auto;
+}
+
+.header__img {
+  text-align: center;
+}
+
+/*----------------------------------------------------------------------------- Symbol Content */
 
 .symbols {
   text-align: center;
@@ -57,23 +98,19 @@ p {
   margin-bottom: 0px;
 }
 
-.productDiv {
-  color: #1d1d1d;
-  background: #f8f8f8;
-  padding: 70px 50px 70px 50px;
-  text-align: center;
-  margin: auto;
-}
+/*----------------------------------------------------------------------------- Product Content */
 
-.productDiv h1,
-.productDiv p {
+.product__section h1,
+.product__section p {
   width: 60%;
   margin: auto;
   margin-bottom: 100px;
 }
 
-.productGrid {
+.product__grid {
   display: grid;
+  width: 1200px;
+  margin: auto;
   margin-top: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -89,4 +126,33 @@ p {
 .product p {
   width: 100%;
   font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------- Text Content */
+
+.text__content {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.recension__grid {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.recension {
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding: 20px 15px 20px 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.quotation {
+  text-align: center;
 }
