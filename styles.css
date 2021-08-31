@@ -76,6 +76,12 @@ p {
   padding: 100px 50px 100px 50px;
 }
 
+.footer__section {
+  background-color: rgb(64, 73, 95);
+  color: #ffffff;
+  padding: 30px 50px 30px 50px;
+}
+
 /*----------------------------------------------------------------------------- Header Content */
 
 .header__grid {
@@ -173,9 +179,6 @@ p {
   margin: auto;
 }
 
-.contact__form {
-}
-
 #email {
   width: 60%;
   height: 45px;
@@ -189,6 +192,8 @@ p {
 }
 
 #subscribe__btn {
+  background-color: rgb(46, 54, 74);
+  color: #ffffff;
   height: 45px;
   width: 20%;
   border-radius: 5px;
@@ -197,6 +202,11 @@ p {
 
   font-size: 15px;
   font-weight: bold;
+}
+
+#subscribe__btn:hover {
+  background-color: rgb(64, 73, 95);
+  cursor: pointer;
 }
 
 .download__app {
@@ -209,4 +219,26 @@ p {
 
 .contact__img img {
   width: 40%;
+}
+
+.footer__grid {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.socials h3 {
+  margin-bottom: 0;
+}
+
+.copyright {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.copyright p {
+  font-size: 15px;
+  margin-bottom: 0;
 }
