@@ -235,10 +235,26 @@ p {
 
 .copyright {
   text-align: right;
-  margin-top: 5px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .copyright p {
   font-size: 15px;
   margin-bottom: 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+  background-color: #5ffdb4;
+  color: rgb(64, 73, 95);
+  padding: 15px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 5px;
 }
