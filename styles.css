@@ -33,7 +33,8 @@ p {
 .header__section,
 .text__section,
 .recension,
-.subscribe__section {
+.subscribe__section,
+.navigation__section {
   background-color: #5ffdb4;
   color: #ffffff;
 }
@@ -44,17 +45,17 @@ p {
 
 /*----------------------------------------------------------------------------- Sections */
 
+.navigation__section {
+  padding: 10px 50px 0px 50px;
+}
+
 .header__section {
-  padding: 30px 50px 30px 50px;
-  height: 100vh;
+  padding: 10px 50px 70px 50px;
+  height: 80vh;
 }
 
 .symbol__section {
-  height: 150px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   padding: 30px 50px 30px 50px;
-  align-content: center;
 }
 
 .product__section {
@@ -82,6 +83,49 @@ p {
   padding: 30px 50px 30px 50px;
 }
 
+/*----------------------------------------------------------------------------- Navigation Content */
+
+.navigation__grid {
+  height: 100%;
+  width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo,
+.navigationbar {
+  width: 80%;
+  margin: auto;
+}
+
+.navigationbar {
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.navigationbar a {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0px 20px 0px 20px;
+  text-transform: uppercase;
+}
+
 /*----------------------------------------------------------------------------- Header Content */
 
 .header__grid {
@@ -102,10 +146,21 @@ p {
   text-align: center;
 }
 
+#downloadh3 {
+  margin-top: 80px;
+}
 /*----------------------------------------------------------------------------- Symbol Content */
+.symbol__grid {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .symbols {
   text-align: center;
+  margin: auto;
+  align-items: center;
 }
 
 .symbols h1,
@@ -172,6 +227,8 @@ p {
   text-align: center;
 }
 
+/*----------------------------------------------------------------------------- Subscribe Content */
+
 .subscribe__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -213,13 +270,15 @@ p {
   margin-top: 100px;
 }
 
-.contact__img {
+.subscribe__img {
   text-align: center;
 }
 
-.contact__img img {
+.subscribe__img img {
   width: 40%;
 }
+
+/*----------------------------------------------------------------------------- Footer Content */
 
 .footer__grid {
   width: 1200px;
@@ -245,7 +304,6 @@ p {
   margin-bottom: 0;
 }
 
-/* Style all font awesome icons */
 .fa {
   background-color: #5ffdb4;
   color: rgb(64, 73, 95);
