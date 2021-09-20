@@ -19,7 +19,7 @@
         <div class="navigation__section">
             <div class="navigation__grid">
                 <div class="logo">
-                    <img src="resources/images/Large Logo White No Background.svg" alt="" style="width: 200px;">
+                    <a href="index.html"><img src="resources/images/Large Logo White No Background.svg" alt="" style="width: 200px;"></a>
                 </div>
 
                 <div class="navigationbar">
@@ -138,8 +138,13 @@
             <div class="subscribe__grid">
                 <div class="subscribe__form">
                     <h2>Stay In Touch</h2>
-                    <input type="text" id="email" placeholder="Email">
-                    <button id="subscribe__btn" onclick="abc()">SUBSCRIBE</button>
+                    
+                        <form class="POST" action="subscribeform.php" method="POST" > 
+                            <input type="text" id="email" placeholder="Email">
+                            <button id="subscribe__btn" type="submit" name="submit">SUBSCRIBE</button>
+                        </form>
+                    
+                    
 
                     <div class="download__app">
                         <h2>Download for FREE</h2>
