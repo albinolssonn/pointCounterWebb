@@ -261,9 +261,9 @@ li {
   border-radius: 5px;
   border-style: none;
   margin-right: 15px;
-
   font-size: 15px;
   font-weight: bold;
+  transition: 0.2s ease-in;
 }
 
 #subscribe__btn:hover {
